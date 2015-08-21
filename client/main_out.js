@@ -1004,11 +1004,11 @@
                 ctx.globalAlpha = 1;
                 ctx.fillStyle = "#FFFFFF";
                 var c = "Leaderboard";
-                ctx.font = "30px Ubuntu";
+                ctx.font = "30px Malgun Gothic, NanumGothic, Ubuntu";
                 ctx.fillText(c, 100 - ctx.measureText(c).width / 2, 40);
                 var b;
                 if (null == teamScores) {
-                    for (ctx.font = "20px Ubuntu", b = 0; b < leaderBoard.length; ++b) {
+                    for (ctx.font = "20px Malgun Gothic, NanumGothic, Ubuntu", b = 0; b < leaderBoard.length; ++b) {
                         c = leaderBoard[b].name || "An unnamed cell";
                         if (!showName) {
                             (c = "An unnamed cell");
@@ -1563,7 +1563,7 @@
                     value = this._value,
                     scale = this._scale,
                     fontsize = this._size,
-                    font = fontsize + 'px Ubuntu';
+                    font = fontsize + 'px MalgunGothic, NanumGothic, Ubuntu';
                 ctx.font = font;
                 var h = ~~(.2 * fontsize);
                 canvas.width = (ctx.measureText(value).width +
